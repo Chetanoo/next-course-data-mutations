@@ -1,4 +1,10 @@
 export default function NewPostPage() {
+  // server action
+  async function createPost(formData) {
+    "use server";
+    console.log({ formData });
+  }
+
   return (
     <>
       <h1>Create a new post</h1>
